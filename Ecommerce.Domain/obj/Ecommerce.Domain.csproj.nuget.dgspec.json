@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\uni\\EcommerceProject-master\\Ecommerce.Domain\\Ecommerce.Domain.csproj": {}
+    "C:\\Users\\hp\\Downloads\\EcommerceProject-master\\Ecommerce.Domain\\Ecommerce.Domain.csproj": {}
   },
   "projects": {
-    "E:\\uni\\EcommerceProject-master\\Ecommerce.Domain\\Ecommerce.Domain.csproj": {
+    "C:\\Users\\hp\\Downloads\\EcommerceProject-master\\Ecommerce.Domain\\Ecommerce.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\uni\\EcommerceProject-master\\Ecommerce.Domain\\Ecommerce.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\hp\\Downloads\\EcommerceProject-master\\Ecommerce.Domain\\Ecommerce.Domain.csproj",
         "projectName": "Ecommerce.Domain",
-        "projectPath": "E:\\uni\\EcommerceProject-master\\Ecommerce.Domain\\Ecommerce.Domain.csproj",
+        "projectPath": "C:\\Users\\hp\\Downloads\\EcommerceProject-master\\Ecommerce.Domain\\Ecommerce.Domain.csproj",
         "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-        "outputPath": "E:\\uni\\EcommerceProject-master\\Ecommerce.Domain\\obj\\",
+        "outputPath": "C:\\Users\\hp\\Downloads\\EcommerceProject-master\\Ecommerce.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

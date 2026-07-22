@@ -19,7 +19,6 @@ namespace Ecommerce.Domain.Contracts
 
          int Skip { get; }
          int Take { get; }
-
         bool IsPagingEnabled { get; }
     }
 }

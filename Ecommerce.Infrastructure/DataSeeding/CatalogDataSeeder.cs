@@ -1,5 +1,6 @@
 ﻿using Ecommerce.Domain.Contracts;
 using Ecommerce.Domain.Entities;
+using Ecommerce.Domain.Entities.Orders;
 using Ecommerce.Domain.Entities.Products;
 using Ecommerce.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
@@ -29,8 +30,9 @@ namespace Ecommerce.Infrastructure.DataSeeding
                await SeedIfEmptyAsync<ProductBrand , int>(seedroot,"brands.json",ct);
                 await SeedIfEmptyAsync<ProductType, int>(seedroot, "types.json", ct);
                 await SeedIfEmptyAsync<Product, int>(seedroot, "products.json", ct);
+                await SeedIfEmptyAsync<DeliveryMethod, int>(seedroot, "delivery.json", ct);
 
-                 var result=await dbContext.SaveChangesAsync(ct);
+                var result=await dbContext.SaveChangesAsync(ct);
 
                 if (result > 0)
                     logger.LogInformation($"{result} rows added");

@@ -18,6 +18,8 @@ namespace Ecommerce.Application
 
             services.AddScoped<IProductService, ProductService>();
             services.AddScoped<IBasketservice, BasketService>();
+            services.AddScoped<ICacheService, CacheService>();
+            services.AddScoped<IAuthenticationService, AuthenticationService>();
 
             return services;
         }
