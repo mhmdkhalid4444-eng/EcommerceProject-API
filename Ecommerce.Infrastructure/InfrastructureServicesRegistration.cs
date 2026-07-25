@@ -6,6 +6,7 @@ using Ecommerce.Infrastructure.DataSeeding;
 using Ecommerce.Infrastructure.Identity.Data;
 using Ecommerce.Infrastructure.Identity.Entities;
 using Ecommerce.Infrastructure.Identity.Service;
+using Ecommerce.Infrastructure.Payments;
 using Ecommerce.Infrastructure.Repositories;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
@@ -77,7 +78,7 @@ namespace Ecommerce.Infrastructure
                     IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtSettings.SecretKey))
                 };
             });
-
+            services.AddSingleton<IPaymentGateway, StripePaymentGateway>();
             return services;
         }
     }
