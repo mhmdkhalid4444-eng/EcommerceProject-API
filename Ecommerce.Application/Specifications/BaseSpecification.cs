@@ -29,8 +29,8 @@ namespace Ecommerce.Application.Specifications
 
         protected void ApplyPaging(int pagesize, int pageindex)
         {
-            Skip = (pageindex - 1) * pagesize;
             Take = pagesize;
+            Skip = (pageindex - 1) * pagesize;
             IsPagingEnabled = true;
         }
 

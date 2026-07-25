@@ -32,7 +32,7 @@ namespace Ecommerce.Application.Services
             return Result<IReadOnlyList<BrandDto>>.Ok(data);
         }
 
-        public async Task<Result<PaginatedResult<ProductDto>>> GetAllProductsAsync( ProductQueryParams queryParams, CancellationToken ct = default)
+        public async Task<Result<PaginatedResult<ProductDto>>> GetAllProductsAsync(ProductQueryParams queryParams, CancellationToken ct = default)
         {
             var spec = new ProductWithTypeAndBrandSpec(queryParams);
             var products = await _unitOfWork.GetRepository<Product, int>().GetAllAsync(spec, ct);
