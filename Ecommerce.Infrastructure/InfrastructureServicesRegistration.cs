@@ -78,6 +78,11 @@ namespace Ecommerce.Infrastructure
                     IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtSettings.SecretKey))
                 };
             });
+<<<<<<< HEAD
+=======
+            services.Configure<PaymentGatewaySettings>(
+            configuration.GetSection("Stripe"));
+>>>>>>> master
             services.AddSingleton<IPaymentGateway, StripePaymentGateway>();
             return services;
         }
